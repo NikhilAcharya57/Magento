@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**  
+* To create list of menus in admin 
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Visionet_CustomerNotification::customer_menu" title="Customer Walk in" module="Visionet_CustomerNotification" sortOrder="20" resource="Visionet_CustomerNotification::customernotification" />
+        <add id="Visionet_CustomerNotification::customer_list_menu" title="Customer List" module="Visionet_CustomerNotification" sortOrder="1" parent="Visionet_CustomerNotification::customer_menu" action="customernotification/customer/index" resource="Visionet_CustomerNotification::customer" />
+    </menu>
+</config>
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**  
+* To declare the Module name 
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Visionet_CustomerNotification" setup_version="0.0.1"/>
+</config>

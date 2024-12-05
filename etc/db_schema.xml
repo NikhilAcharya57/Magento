@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**  
+* To maintain the database structure(customer_notification_table) for a module
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="visionet_customernotification" resource="default" engine="innodb">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true"/>
+        <column xsi:type="int" name="customer_id" nullable="false"/>
+        <column xsi:type="varchar" name="customer_name" nullable="false" length="30"/>
+        <column xsi:type="timestamp" name="login_time" nullable="false" default="CURRENT_TIMESTAMP" on_update="false"/>
+        <column xsi:type="boolean" name="flag" nullable="false" />
+        <column xsi:type="varchar" name="store_assistance" nullable="false" length="30"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

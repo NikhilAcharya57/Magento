@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**  
+* Configures which dependencies are injected by the object manager
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="customernotification" frontName="customernotification">
+            <module name="Visionet_CustomerNotification" />
+        </route>
+    </router>
+</config>

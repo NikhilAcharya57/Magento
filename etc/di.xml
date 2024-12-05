@@ -1,0 +1,26 @@
+<!--
+/**  
+* Configures which dependencies are injected by the object manager
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="customernotification_customer_listing_data_source" xsi:type="string">Visionet\CustomerNotification\Model\ResourceModel\Customer\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Visionet\CustomerNotification\Model\ResourceModel\Customer\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">customer_notification_table</argument>
+            <argument name="resourceModel" xsi:type="string">Visionet\CustomerNotification\Model\ResourceModel\Customer</argument>
+        </arguments>
+    </virtualType>
+</config>

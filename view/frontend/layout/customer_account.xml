@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+/**  
+* To create new menu(Store Walk in) in Account section(frontend)
+* @category: PHP
+* @package: Visionet/CustomerNotification
+* @copyright: Visionet Systems Limited. All rights reserved.
+* @license: Visionet Systems Limited
+* @author: Nikhil A <nikhil.a@visionetsystems.com>
+* @keywords: Module Visionet_CustomerNotification
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="Visionet_customernotification_custom_my_account">
+                <arguments>
+                    <argument name="path" xsi:type="string">customernotification\account\custom</argument>
+                    <argument name="label" xsi:type="string">Store Walk in</argument>
+                    <argument name="sortOrder" xsi:type="number">150</argument>
+                    <argument name="navigation" xsi:type="boolean">true</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
