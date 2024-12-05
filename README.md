@@ -1,2 +1,1 @@
-# Magento
-# Magento Custom Modules
+# Customer Notification Module 
